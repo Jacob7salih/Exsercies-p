@@ -1,9 +1,5 @@
 @charset "UTF-8";
 @import url("/node_modules/bootstrap-icons/font/bootstrap-icons.css");
-footer {
-  color: green;
-}
-
 /*!
  * Bootstrap  v5.3.9 (https://getbootstrap.com/)
  * Copyright 2011-2026 The Bootstrap Authors
@@ -12000,4 +11996,50 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+main {
+  margin-bottom: 250px;
+}
+
+footer.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+
+.hero-scene {
+  position: relative;
+}
+.hero-scene::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/FondHeroScene.jpg");
+  background-size: cover;
+  filter: brightness(0.3);
+}
+.hero-scene * {
+  position: relative;
+}
+
+.hero-scene {
+  margin-bottom: 15px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */

@@ -1,6 +1,54 @@
-footer {
-  color: green;
-}
-
 @import url("/node_modules/bootstrap-icons/font/bootstrap-icons.css");
 @import 'custom';
+
+html {
+  position: relative;
+  min-height: 100%
+}
+
+main {
+  margin-bottom: 250px;
+}
+
+footer.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+
+.hero-scene {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/FondHeroScene.jpg");
+    background-size: cover;
+    filter: brightness(0.3);
+  }
+
+  * {
+    //pour que le contenu soit au dessus du ::before
+    position: relative;
+  }
+
+}
+
+.hero-scene {
+  margin-bottom: 15px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
